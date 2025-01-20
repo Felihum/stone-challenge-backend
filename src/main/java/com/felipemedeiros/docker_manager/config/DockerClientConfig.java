@@ -19,7 +19,7 @@ public class DockerClientConfig {
     private String dockerSocketPath;
 
     @Bean
-    @Lazy(value = false)
+    @Lazy(false)
     public DockerClient buildDockerClient(){
         DefaultDockerClientConfig.Builder dockerClientConfigBuilder = DefaultDockerClientConfig
                 .createDefaultConfigBuilder();
